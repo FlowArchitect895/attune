@@ -1,16 +1,34 @@
-# React + Vite
+# ATTUNE
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Audiobook performance attunement tool for independent authors. Paste your manuscript, get structured recording sessions with vocal load scoring, cold read risk detection, and performance register analysis. Built for phone recording in a quiet room — no studio required.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+- **Session Splitter** — breaks chapters into optimal 30-minute vocal performance windows
+- **Vocal Load Score** — computed per session from sentence density, dialogue ratio, and paragraph length
+- **Cold Read Risk Detection** — flags sentences over 40 words or with high punctuation density
+- **Performance Register** — detects dominant emotional register (TENSION, GRIEF, INTROSPECTION, DIALOGUE, ACTION, EXPOSITION)
+- **Studio Anywhere Checklist** — pre-recording preparation for phone recording with no professional equipment
+- **Progress Tracker** — mark sessions done, track completion across chapters
+- **Export Plan** — download your full recording plan as a markdown file
 
-## React Compiler
+## How To Run
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+```bash
+git clone https://github.com/FlowArchitect895/attune.git
+cd attune
+npm install
+npm run dev
+```
 
-## Expanding the ESLint configuration
+Then open `http://localhost:5173`
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Built With
+
+- React + Vite
+- GitHub Copilot
+- Vanilla CSS in JS
+
+## Built For
+
+GitHub Finish-Up-A-Thon Challenge — DEV.to x GitHub
